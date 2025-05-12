@@ -1,0 +1,382 @@
+@import url("./color.css");
+
+/* Base theme structure - using CSS custom properties for scheme variations */
+:root {
+  /* Default to blue light scheme */
+  --theme-bg: var(--blue-0);
+  --theme-surface: var(--blue-2);
+  --theme-surface-hover: var(--blue-3);
+  --theme-surface-active: var(--blue-4);
+  
+  --theme-text: var(--blue-9);
+  --theme-text-secondary: var(--blue-7);
+  --theme-text-tertiary: var(--blue-5);
+  --theme-text-disabled: var(--blue-4);
+  
+  --theme-interactive: var(--blue-6);
+  --theme-interactive-hover: var(--blue-7);
+  --theme-interactive-active: var(--blue-8);
+  
+  --theme-border: var(--blue-3);
+  --theme-border-hover: var(--blue-4);
+  --theme-border-active: var(--blue-5);
+  
+  --theme-accent: var(--blue-8);
+  --theme-accent-hover: var(--blue-9);
+  --theme-accent-active: var(--blue-10);
+}
+
+/* Blue Schemes */
+[data-theme="blue"][data-scheme="light"] {
+  --theme-bg: var(--blue-0);
+  --theme-surface: var(--blue-2);
+  --theme-surface-hover: var(--blue-3);
+  --theme-surface-active: var(--blue-4);
+  
+  --theme-text: var(--blue-9);
+  --theme-text-secondary: var(--blue-7);
+  --theme-text-tertiary: var(--blue-5);
+  --theme-text-disabled: var(--blue-4);
+  
+  --theme-interactive: var(--blue-6);
+  --theme-interactive-hover: var(--blue-7);
+  --theme-interactive-active: var(--blue-8);
+  
+  --theme-border: var(--blue-3);
+  --theme-border-hover: var(--blue-4);
+  --theme-border-active: var(--blue-5);
+  
+  --theme-accent: var(--blue-8);
+  --theme-accent-hover: var(--blue-9);
+  --theme-accent-active: var(--blue-10);
+}
+
+[data-theme="blue"][data-scheme="dark"] {
+  --theme-bg: var(--blue-9);
+  --theme-surface: var(--blue-7);
+  --theme-surface-hover: var(--blue-6);
+  --theme-surface-active: var(--blue-5);
+  
+  --theme-text: var(--blue-0);
+  --theme-text-secondary: var(--blue-2);
+  --theme-text-tertiary: var(--blue-4);
+  --theme-text-disabled: var(--blue-5);
+  
+  --theme-interactive: var(--blue-3);
+  --theme-interactive-hover: var(--blue-2);
+  --theme-interactive-active: var(--blue-1);
+  
+  --theme-border: var(--blue-6);
+  --theme-border-hover: var(--blue-5);
+  --theme-border-active: var(--blue-4);
+  
+  --theme-accent: var(--blue-1);
+  --theme-accent-hover: var(--blue-0);
+  --theme-accent-active: var(--blue-0);
+}
+
+[data-theme="blue"][data-scheme="high-contrast"] {
+  --theme-bg: var(--blue-10);
+  --theme-surface: var(--blue-8);
+  --theme-surface-hover: var(--blue-7);
+  --theme-surface-active: var(--blue-6);
+  
+  --theme-text: var(--blue-0);
+  --theme-text-secondary: var(--blue-1);
+  --theme-text-tertiary: var(--blue-2);
+  --theme-text-disabled: var(--blue-3);
+  
+  --theme-interactive: var(--blue-1);
+  --theme-interactive-hover: var(--blue-0);
+  --theme-interactive-active: var(--blue-0);
+  
+  --theme-border: var(--blue-7);
+  --theme-border-hover: var(--blue-6);
+  --theme-border-active: var(--blue-5);
+  
+  --theme-accent: var(--blue-0);
+  --theme-accent-hover: var(--blue-0);
+  --theme-accent-active: var(--blue-1);
+}
+
+/* Red Schemes */
+[data-theme="red"][data-scheme="light"] {
+  --theme-bg: var(--red-0);
+  --theme-surface: var(--red-2);
+  --theme-surface-hover: var(--red-3);
+  --theme-surface-active: var(--red-4);
+  
+  --theme-text: var(--red-9);
+  --theme-text-secondary: var(--red-7);
+  --theme-text-tertiary: var(--red-5);
+  --theme-text-disabled: var(--red-4);
+  
+  --theme-interactive: var(--red-6);
+  --theme-interactive-hover: var(--red-7);
+  --theme-interactive-active: var(--red-8);
+  
+  --theme-border: var(--red-3);
+  --theme-border-hover: var(--red-4);
+  --theme-border-active: var(--red-5);
+  
+  --theme-accent: var(--red-8);
+  --theme-accent-hover: var(--red-9);
+  --theme-accent-active: var(--red-10);
+}
+
+[data-theme="red"][data-scheme="dark"] {
+  --theme-bg: var(--red-9);
+  --theme-surface: var(--red-7);
+  --theme-surface-hover: var(--red-6);
+  --theme-surface-active: var(--red-5);
+  
+  --theme-text: var(--red-0);
+  --theme-text-secondary: var(--red-2);
+  --theme-text-tertiary: var(--red-4);
+  --theme-text-disabled: var(--red-5);
+  
+  --theme-interactive: var(--red-3);
+  --theme-interactive-hover: var(--red-2);
+  --theme-interactive-active: var(--red-1);
+  
+  --theme-border: var(--red-6);
+  --theme-border-hover: var(--red-5);
+  --theme-border-active: var(--red-4);
+  
+  --theme-accent: var(--red-1);
+  --theme-accent-hover: var(--red-0);
+  --theme-accent-active: var(--red-0);
+}
+
+[data-theme="red"][data-scheme="high-contrast"] {
+  --theme-bg: var(--red-10);
+  --theme-surface: var(--red-8);
+  --theme-surface-hover: var(--red-7);
+  --theme-surface-active: var(--red-6);
+  
+  --theme-text: var(--red-0);
+  --theme-text-secondary: var(--red-1);
+  --theme-text-tertiary: var(--red-2);
+  --theme-text-disabled: var(--red-3);
+  
+  --theme-interactive: var(--red-1);
+  --theme-interactive-hover: var(--red-0);
+  --theme-interactive-active: var(--red-0);
+  
+  --theme-border: var(--red-7);
+  --theme-border-hover: var(--red-6);
+  --theme-border-active: var(--red-5);
+  
+  --theme-accent: var(--red-0);
+  --theme-accent-hover: var(--red-0);
+  --theme-accent-active: var(--red-1);
+}
+
+/* Continue this pattern for each hue: gray, burgundy, peach, orange, yellow, green, 
+   teal, turquoise, cyan, navy, magenta, pink */
+
+/* Common semantic mappings for all themes */
+:root, [data-theme][data-scheme] {
+  /* UI Element mappings */
+  --background: var(--theme-bg);
+  --surface: var(--theme-surface);
+  --surface-hover: var(--theme-surface-hover);
+  --surface-active: var(--theme-surface-active);
+  
+  /* Text colors */
+  --text-primary: var(--theme-text);
+  --text-secondary: var(--theme-text-secondary);
+  --text-tertiary: var(--theme-text-tertiary);
+  --text-disabled: var(--theme-text-disabled);
+  
+  /* Interactive elements */
+  --interactive: var(--theme-interactive);
+  --interactive-hover: var(--theme-interactive-hover);
+  --interactive-active: var(--theme-interactive-active);
+  
+  /* Borders */
+  --border: var(--theme-border);
+  --border-hover: var(--theme-border-hover);
+  --border-active: var(--theme-border-active);
+  
+  /* Accents */
+  --accent: var(--theme-accent);
+  --accent-hover: var(--theme-accent-hover);
+  --accent-active: var(--theme-accent-active);
+}
+
+/* Base Theme Variables */
+:root {
+  /* Semantic Color Names */
+  --primary-color: var(--blue-6);
+  --primary-color-hover: var(--blue-7);
+  --primary-color-active: var(--blue-8);
+  --primary-color-muted: var(--blue-4);
+
+  --secondary-color: var(--teal-6);
+  --secondary-color-hover: var(--teal-7);
+  --secondary-color-active: var(--teal-8);
+  --secondary-color-muted: var(--teal-4);
+
+  --accent-color: var(--magenta-6);
+  --accent-color-hover: var(--magenta-7);
+  --accent-color-active: var(--magenta-8);
+  --accent-color-muted: var(--magenta-4);
+
+  --success-color: var(--green-6);
+  --success-color-hover: var(--green-7);
+  --success-color-active: var(--green-8);
+  --success-color-muted: var(--green-4);
+
+  --warning-color: var(--orange-6);
+  --warning-color-hover: var(--orange-7);
+  --warning-color-active: var(--orange-8);
+  --warning-color-muted: var(--orange-4);
+
+  --error-color: var(--red-6);
+  --error-color-hover: var(--red-7);
+  --error-color-active: var(--red-8);
+  --error-color-muted: var(--red-4);
+
+  --info-color: var(--cyan-6);
+  --info-color-hover: var(--cyan-7);
+  --info-color-active: var(--cyan-8);
+  --info-color-muted: var(--cyan-4);
+
+  /* Surface Colors */
+  --surface-0: var(--white-0);
+  --surface-1: var(--white-2);
+  --surface-2: var(--white-4);
+  --surface-3: var(--white-6);
+  --surface-4: var(--white-8);
+
+  /* Text Colors */
+  --text-primary: var(--black-9);
+  --text-secondary: var(--black-7);
+  --text-tertiary: var(--black-5);
+  --text-disabled: var(--black-3);
+
+  /* Border Colors */
+  --border-color: var(--gray-3);
+  --border-color-hover: var(--gray-4);
+  --border-color-active: var(--gray-5);
+
+  /* Shadow Colors */
+  --shadow-color: var(--black-1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  /* Surface Colors */
+  --surface-0: var(--black-0);
+  --surface-1: var(--black-2);
+  --surface-2: var(--black-4);
+  --surface-3: var(--black-6);
+  --surface-4: var(--black-8);
+
+  /* Text Colors */
+  --text-primary: var(--white-9);
+  --text-secondary: var(--white-7);
+  --text-tertiary: var(--white-5);
+  --text-disabled: var(--white-3);
+
+  /* Border Colors */
+  --border-color: var(--gray-7);
+  --border-color-hover: var(--gray-8);
+  --border-color-active: var(--gray-9);
+
+  /* Shadow Colors */
+  --shadow-color: var(--black-9);
+
+  /* Semantic Colors - Adjusted for Dark Theme */
+  --primary-color: var(--blue-4);
+  --primary-color-hover: var(--blue-5);
+  --primary-color-active: var(--blue-6);
+  --primary-color-muted: var(--blue-2);
+
+  --secondary-color: var(--teal-4);
+  --secondary-color-hover: var(--teal-5);
+  --secondary-color-active: var(--teal-6);
+  --secondary-color-muted: var(--teal-2);
+
+  --accent-color: var(--magenta-4);
+  --accent-color-hover: var(--magenta-5);
+  --accent-color-active: var(--magenta-6);
+  --accent-color-muted: var(--magenta-2);
+
+  --success-color: var(--green-4);
+  --success-color-hover: var(--green-5);
+  --success-color-active: var(--green-6);
+  --success-color-muted: var(--green-2);
+
+  --warning-color: var(--orange-4);
+  --warning-color-hover: var(--orange-5);
+  --warning-color-active: var(--orange-6);
+  --warning-color-muted: var(--orange-2);
+
+  --error-color: var(--red-4);
+  --error-color-hover: var(--red-5);
+  --error-color-active: var(--red-6);
+  --error-color-muted: var(--red-2);
+
+  --info-color: var(--cyan-4);
+  --info-color-hover: var(--cyan-5);
+  --info-color-active: var(--cyan-6);
+  --info-color-muted: var(--cyan-2);
+}
+
+/* High Contrast Theme */
+[data-theme="high-contrast"] {
+  /* Increase contrast by using more extreme values */
+  --text-primary: var(--white-10);
+  --text-secondary: var(--white-8);
+  --text-tertiary: var(--white-6);
+  --text-disabled: var(--white-4);
+
+  --surface-0: var(--black-0);
+  --surface-1: var(--black-1);
+  --surface-2: var(--black-2);
+  --surface-3: var(--black-3);
+  --surface-4: var(--black-4);
+
+  /* Semantic Colors - High Contrast */
+  --primary-color: var(--blue-8);
+  --primary-color-hover: var(--blue-9);
+  --primary-color-active: var(--blue-10);
+  --primary-color-muted: var(--blue-6);
+
+  --secondary-color: var(--teal-8);
+  --secondary-color-hover: var(--teal-9);
+  --secondary-color-active: var(--teal-10);
+  --secondary-color-muted: var(--teal-6);
+
+  --accent-color: var(--magenta-8);
+  --accent-color-hover: var(--magenta-9);
+  --accent-color-active: var(--magenta-10);
+  --accent-color-muted: var(--magenta-6);
+
+  --success-color: var(--green-8);
+  --success-color-hover: var(--green-9);
+  --success-color-active: var(--green-10);
+  --success-color-muted: var(--green-6);
+
+  --warning-color: var(--orange-8);
+  --warning-color-hover: var(--orange-9);
+  --warning-color-active: var(--orange-10);
+  --warning-color-muted: var(--orange-6);
+
+  --error-color: var(--red-8);
+  --error-color-hover: var(--red-9);
+  --error-color-active: var(--red-10);
+  --error-color-muted: var(--red-6);
+
+  --info-color: var(--cyan-8);
+  --info-color-hover: var(--cyan-9);
+  --info-color-active: var(--cyan-10);
+  --info-color-muted: var(--cyan-6);
+
+  /* Border Colors */
+  --border-color: var(--white-8);
+  --border-color-hover: var(--white-9);
+  --border-color-active: var(--white-10);
+} 

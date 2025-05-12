@@ -25,30 +25,6 @@
     --white-9: lch(calc(80% + 9% * 2) 0 var(--gray-hue));
     --white-10: lch(calc(80% + 10% * 2) 0 var(--gray-hue));
 
-    --red-0: lch(000% 100 var(--red-hue));
-    --red-1: lch(009% 100 var(--red-hue));
-    --red-2: lch(019% 100 var(--red-hue));
-    --red-3: lch(029% 100 var(--red-hue));
-    --red-4: lch(039% 100 var(--red-hue));
-    --red-5: lch(049% 100 var(--red-hue));
-    --red-6: lch(059% 100 var(--red-hue));
-    --red-7: lch(069% 100 var(--red-hue));
-    --red-8: lch(079% 100 var(--red-hue));
-    --red-9: lch(089% 100 var(--red-hue));
-    --red-10: lch(099% 100 var(--red-hue));
-
-    --green-0: lch(0% 100 var(--green-hue));
-    --green-1: lch(10% 100 var(--green-hue));
-    --green-2: lch(20% 100 var(--green-hue));
-    --green-3: lch(30% 100 var(--green-hue));
-    --green-4: lch(40% 100 var(--green-hue));
-    --green-5: lch(50% 100 var(--green-hue));
-    --green-6: lch(60% 100 var(--green-hue));
-    --green-7: lch(70% 100 var(--green-hue));
-    --green-8: lch(80% 100 var(--green-hue));
-    --green-9: lch(90% 100 var(--green-hue));
-    --green-10: lch(100% 100 var(--green-hue));
-
     --blue-0: lch(calc(0% * 8) 100 var(--blue-hue));
     --blue-1: lch(calc(1% * 8) 100 var(--blue-hue));
     --blue-2: lch(calc(2% * 8) 100 var(--blue-hue));
@@ -61,17 +37,17 @@
     --blue-9: lch(calc(9% * 8) 100 var(--blue-hue));
     --blue-10: lch(calc(10% * 8) 100 var(--blue-hue));
 
-    --yellow-0: lch(calc(40% + 0% * 6) 100 var(--yellow-hue));
-    --yellow-1: lch(calc(40% + 1% * 6) 100 var(--yellow-hue));
-    --yellow-2: lch(calc(40% + 2% * 6) 100 var(--yellow-hue));
-    --yellow-3: lch(calc(40% + 3% * 6) 100 var(--yellow-hue));
-    --yellow-4: lch(calc(40% + 4% * 6) 100 var(--yellow-hue));
-    --yellow-5: lch(calc(40% + 5% * 6) 100 var(--yellow-hue));
-    --yellow-6: lch(calc(40% + 6% * 6) 100 var(--yellow-hue));
-    --yellow-7: lch(calc(40% + 7% * 6) 100 var(--yellow-hue));
-    --yellow-8: lch(calc(40% + 8% * 6) 100 var(--yellow-hue));
-    --yellow-9: lch(calc(40% + 9% * 6) 100 var(--yellow-hue));
-    --yellow-10: lch(calc(40% + 10% * 6) 100 var(--yellow-hue));
+    --burgundy-0: lch(calc(10% + 0% * 7) 90 var(--burgundy-hue));
+    --burgundy-1: lch(calc(10% + 1% * 7) 90 var(--burgundy-hue));
+    --burgundy-2: lch(calc(10% + 2% * 7) 90 var(--burgundy-hue));
+    --burgundy-3: lch(calc(10% + 3% * 7) 90 var(--burgundy-hue));
+    --burgundy-4: lch(calc(10% + 4% * 7) 90 var(--burgundy-hue));
+    --burgundy-5: lch(calc(10% + 5% * 7) 90 var(--burgundy-hue));
+    --burgundy-6: lch(calc(10% + 6% * 7) 90 var(--burgundy-hue));
+    --burgundy-7: lch(calc(10% + 7% * 7) 90 var(--burgundy-hue));
+    --burgundy-8: lch(calc(10% + 8% * 7) 90 var(--burgundy-hue));
+    --burgundy-9: lch(calc(10% + 9% * 7) 90 var(--burgundy-hue));
+    --burgundy-10: lch(calc(10% + 10% * 7) 90 var(--burgundy-hue));
 
     --cyan-0: lch(calc(40% + 0% * 6) 100 var(--cyan-hue));
     --cyan-1: lch(calc(40% + 1% * 6) 100 var(--cyan-hue));
@@ -85,18 +61,6 @@
     --cyan-9: lch(calc(40% + 9% * 6) 100 var(--cyan-hue));
     --cyan-10: lch(calc(40% + 10% * 6) 100 var(--cyan-hue));
 
-    --magenta-0: lch(0% 100 var(--magenta-hue));
-    --magenta-1: lch(10% 100 var(--magenta-hue));
-    --magenta-2: lch(20% 100 var(--magenta-hue));
-    --magenta-3: lch(30% 100 var(--magenta-hue));
-    --magenta-4: lch(40% 100 var(--magenta-hue));
-    --magenta-5: lch(50% 100 var(--magenta-hue));
-    --magenta-6: lch(60% 100 var(--magenta-hue));
-    --magenta-7: lch(70% 100 var(--magenta-hue));
-    --magenta-8: lch(80% 100 var(--magenta-hue));
-    --magenta-9: lch(90% 100 var(--magenta-hue));
-    --magenta-10: lch(100% 100 var(--magenta-hue));
-
     --gray-0: lch(calc(15% + 0% * 7) 0 var(--gray-hue));
     --gray-1: lch(calc(15% + 1% * 7) 0 var(--gray-hue));
     --gray-2: lch(calc(15% + 2% * 7) 0 var(--gray-hue));
@@ -109,17 +73,42 @@
     --gray-9: lch(calc(15% + 9% * 7) 0 var(--gray-hue));
     --gray-10: lch(calc(15% + 10% * 7) 0 var(--gray-hue));
 
-    --turquoise-0: lch(calc(0% * 9) 100 var(--turquoise-hue));
-    --turquoise-1: lch(calc(1% * 9) 100 var(--turquoise-hue));
-    --turquoise-2: lch(calc(2% * 9) 100 var(--turquoise-hue));
-    --turquoise-3: lch(calc(3% * 9) 100 var(--turquoise-hue));
-    --turquoise-4: lch(calc(4% * 9) 100 var(--turquoise-hue));
-    --turquoise-5: lch(calc(5% * 9) 100 var(--turquoise-hue));
-    --turquoise-6: lch(calc(6% * 9) 100 var(--turquoise-hue));
-    --turquoise-7: lch(calc(7% * 9) 100 var(--turquoise-hue));
-    --turquoise-8: lch(calc(8% * 9) 100 var(--turquoise-hue));
-    --turquoise-9: lch(calc(9% * 9) 100 var(--turquoise-hue));
-    --turquoise-10: lch(calc(10% * 9) 100 var(--turquoise-hue));
+    --green-0: lch(0% 100 var(--green-hue));
+    --green-1: lch(10% 100 var(--green-hue));
+    --green-2: lch(20% 100 var(--green-hue));
+    --green-3: lch(30% 100 var(--green-hue));
+    --green-4: lch(40% 100 var(--green-hue));
+    --green-5: lch(50% 100 var(--green-hue));
+    --green-6: lch(60% 100 var(--green-hue));
+    --green-7: lch(70% 100 var(--green-hue));
+    --green-8: lch(80% 100 var(--green-hue));
+    --green-9: lch(90% 100 var(--green-hue));
+    --green-10: lch(100% 100 var(--green-hue));
+
+    --magenta-0: lch(0% 100 var(--magenta-hue));
+    --magenta-1: lch(10% 100 var(--magenta-hue));
+    --magenta-2: lch(20% 100 var(--magenta-hue));
+    --magenta-3: lch(30% 100 var(--magenta-hue));
+    --magenta-4: lch(40% 100 var(--magenta-hue));
+    --magenta-5: lch(50% 100 var(--magenta-hue));
+    --magenta-6: lch(60% 100 var(--magenta-hue));
+    --magenta-7: lch(70% 100 var(--magenta-hue));
+    --magenta-8: lch(80% 100 var(--magenta-hue));
+    --magenta-9: lch(90% 100 var(--magenta-hue));
+    --magenta-10: lch(100% 100 var(--magenta-hue));
+
+    --navy-0: lch(calc(0% * 6) 70 var(--navy-hue));
+    --navy-1: lch(calc(1% * 6) 70 var(--navy-hue));
+    --navy-2: lch(calc(2% * 6) 70 var(--navy-hue));
+    --navy-3: lch(calc(3% * 6) 70 var(--navy-hue));
+    --navy-4: lch(calc(4% * 6) 70 var(--navy-hue));
+    --navy-5: lch(calc(5% * 6) 70 var(--navy-hue));
+    --navy-6: lch(calc(6% * 6) 70 var(--navy-hue));
+    --navy-7: lch(calc(7% * 6) 70 var(--navy-hue));
+    --navy-8: lch(calc(8% * 6) 70 var(--navy-hue));
+    --navy-9: lch(calc(9% * 6) 70 var(--navy-hue));
+    --navy-10: lch(calc(10% * 6) 70 var(--navy-hue));
+
 
     --orange-0: lch(calc(40% + 0% * 6) 100 var(--orange-hue));
     --orange-1: lch(calc(40% + 1% * 6) 100 var(--orange-hue));
@@ -145,6 +134,31 @@
     --peach-9: lch(calc(20% + 9% * 8) 100 var(--peach-hue));
     --peach-10: lch(calc(20% + 10% * 8) 100 var(--peach-hue));
 
+    --pink-0: lch(calc(20% + 0% * 8) 100 var(--pink-hue));
+    --pink-1: lch(calc(20% + 1% * 8) 100 var(--pink-hue));
+    --pink-2: lch(calc(20% + 2% * 8) 100 var(--pink-hue));
+    --pink-3: lch(calc(20% + 3% * 8) 100 var(--pink-hue));
+    --pink-4: lch(calc(20% + 4% * 8) 100 var(--pink-hue));
+    --pink-5: lch(calc(20% + 5% * 8) 100 var(--pink-hue));
+    --pink-6: lch(calc(20% + 6% * 8) 100 var(--pink-hue));
+    --pink-7: lch(calc(20% + 7% * 8) 100 var(--pink-hue));
+    --pink-8: lch(calc(20% + 8% * 8) 100 var(--pink-hue));
+    --pink-9: lch(calc(20% + 9% * 8) 100 var(--pink-hue));
+    --pink-10: lch(calc(20% + 10% * 8) 100 var(--pink-hue));
+
+
+    --red-0: lch(000% 100 var(--red-hue));
+    --red-1: lch(009% 100 var(--red-hue));
+    --red-2: lch(019% 100 var(--red-hue));
+    --red-3: lch(029% 100 var(--red-hue));
+    --red-4: lch(039% 100 var(--red-hue));
+    --red-5: lch(049% 100 var(--red-hue));
+    --red-6: lch(059% 100 var(--red-hue));
+    --red-7: lch(069% 100 var(--red-hue));
+    --red-8: lch(079% 100 var(--red-hue));
+    --red-9: lch(089% 100 var(--red-hue));
+    --red-10: lch(099% 100 var(--red-hue));
+
     --teal-0: lch(calc(0% * 8) 100 var(--teal-hue));
     --teal-1: lch(calc(1% * 8) 100 var(--teal-hue));
     --teal-2: lch(calc(2% * 8) 100 var(--teal-hue));
@@ -157,27 +171,29 @@
     --teal-9: lch(calc(9% * 8) 100 var(--teal-hue));
     --teal-10: lch(calc(10% * 8) 100 var(--teal-hue));
 
-    --navy-0: lch(calc(0% * 6) 70 var(--navy-hue));
-    --navy-1: lch(calc(1% * 6) 70 var(--navy-hue));
-    --navy-2: lch(calc(2% * 6) 70 var(--navy-hue));
-    --navy-3: lch(calc(3% * 6) 70 var(--navy-hue));
-    --navy-4: lch(calc(4% * 6) 70 var(--navy-hue));
-    --navy-5: lch(calc(5% * 6) 70 var(--navy-hue));
-    --navy-6: lch(calc(6% * 6) 70 var(--navy-hue));
-    --navy-7: lch(calc(7% * 6) 70 var(--navy-hue));
-    --navy-8: lch(calc(8% * 6) 70 var(--navy-hue));
-    --navy-9: lch(calc(9% * 6) 70 var(--navy-hue));
-    --navy-10: lch(calc(10% * 6) 70 var(--navy-hue));
+    --turquoise-0: lch(calc(0% * 9) 100 var(--turquoise-hue));
+    --turquoise-1: lch(calc(1% * 9) 100 var(--turquoise-hue));
+    --turquoise-2: lch(calc(2% * 9) 100 var(--turquoise-hue));
+    --turquoise-3: lch(calc(3% * 9) 100 var(--turquoise-hue));
+    --turquoise-4: lch(calc(4% * 9) 100 var(--turquoise-hue));
+    --turquoise-5: lch(calc(5% * 9) 100 var(--turquoise-hue));
+    --turquoise-6: lch(calc(6% * 9) 100 var(--turquoise-hue));
+    --turquoise-7: lch(calc(7% * 9) 100 var(--turquoise-hue));
+    --turquoise-8: lch(calc(8% * 9) 100 var(--turquoise-hue));
+    --turquoise-9: lch(calc(9% * 9) 100 var(--turquoise-hue));
+    --turquoise-10: lch(calc(10% * 9) 100 var(--turquoise-hue));
 
-    --burgundy-0: lch(calc(10% + 0% * 7) 90 var(--burgundy-hue));
-    --burgundy-1: lch(calc(10% + 1% * 7) 90 var(--burgundy-hue));
-    --burgundy-2: lch(calc(10% + 2% * 7) 90 var(--burgundy-hue));
-    --burgundy-3: lch(calc(10% + 3% * 7) 90 var(--burgundy-hue));
-    --burgundy-4: lch(calc(10% + 4% * 7) 90 var(--burgundy-hue));
-    --burgundy-5: lch(calc(10% + 5% * 7) 90 var(--burgundy-hue));
-    --burgundy-6: lch(calc(10% + 6% * 7) 90 var(--burgundy-hue));
-    --burgundy-7: lch(calc(10% + 7% * 7) 90 var(--burgundy-hue));
-    --burgundy-8: lch(calc(10% + 8% * 7) 90 var(--burgundy-hue));
-    --burgundy-9: lch(calc(10% + 9% * 7) 90 var(--burgundy-hue));
-    --burgundy-10: lch(calc(10% + 10% * 7) 90 var(--burgundy-hue));
+
+    --yellow-0: lch(calc(40% + 0% * 6) 100 var(--yellow-hue));
+    --yellow-1: lch(calc(40% + 1% * 6) 100 var(--yellow-hue));
+    --yellow-2: lch(calc(40% + 2% * 6) 100 var(--yellow-hue));
+    --yellow-3: lch(calc(40% + 3% * 6) 100 var(--yellow-hue));
+    --yellow-4: lch(calc(40% + 4% * 6) 100 var(--yellow-hue));
+    --yellow-5: lch(calc(40% + 5% * 6) 100 var(--yellow-hue));
+    --yellow-6: lch(calc(40% + 6% * 6) 100 var(--yellow-hue));
+    --yellow-7: lch(calc(40% + 7% * 6) 100 var(--yellow-hue));
+    --yellow-8: lch(calc(40% + 8% * 6) 100 var(--yellow-hue));
+    --yellow-9: lch(calc(40% + 9% * 6) 100 var(--yellow-hue));
+    --yellow-10: lch(calc(40% + 10% * 6) 100 var(--yellow-hue));
+
 }

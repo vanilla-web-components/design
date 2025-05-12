@@ -1,0 +1,46 @@
+@import url("./width.css");
+
+:root {
+    --button-cursor: pointer;
+    --button-disabled: not-allowed;
+    --button-disabled-opacity: 0.6;
+}
+
+.button {
+    cursor: var(--button-cursor);
+    transition: all 0.2s ease;
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &.thin {
+        padding: var(--padding-1);
+        margin: var(--margin-1);
+    }
+    &.medium {
+        padding: var(--padding-2);
+        margin: var(--margin-2);
+    }
+    &.large {
+        padding: var(--padding-4);
+        margin: var(--margin-4);
+    }
+    &.full-width {
+        width: 100%;
+    }
+    &.wide {
+        padding: var(--padding-4);
+        margin: var(--margin-4);
+    }
+    &.round {
+        border-radius: var(--border-width-round);
+    }
+
+    &.disabled,
+    &[data-disabled="disabled"] {
+        opacity: var(--button-disabled-opacity);
+        cursor: var(--button-disabled);
+        pointer-events: none;
+    }
+}

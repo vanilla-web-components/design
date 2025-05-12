@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Schemes Demo - @vanilla-web-components/design</title>
+    <link rel="stylesheet" href="../dist/themes.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+        }
+
+        .theme-switcher {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 1rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .theme-switcher select {
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: var(--background);
+            color: var(--text-primary);
+            font-size: 1rem;
+            min-width: 120px;
+        }
+
+        .theme-container {
+            min-height: 100vh;
+            background: var(--background);
+            color: var(--text-primary);
+            padding: 2rem;
+        }
+
+        .demo-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-secondary);
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .card:hover {
+            background: var(--surface-hover);
+            border-color: var(--border-hover);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .button-primary {
+            background: var(--interactive);
+            color: var(--background);
+        }
+
+        .button-primary:hover {
+            background: var(--interactive-hover);
+        }
+
+        .button-primary:active {
+            background: var(--interactive-active);
+        }
+
+        .button-secondary {
+            background: var(--surface);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .button-secondary:hover {
+            background: var(--surface-hover);
+            border-color: var(--border-hover);
+        }
+
+        .button-accent {
+            background: var(--accent);
+            color: var(--background);
+        }
+
+        .button-accent:hover {
+            background: var(--accent-hover);
+        }
+
+        .text-sample {
+            margin: 2rem 0;
+        }
+
+        .text-primary {
+            color: var(--text-primary);
+        }
+
+        .text-secondary {
+            color: var(--text-secondary);
+        }
+
+        .text-tertiary {
+            color: var(--text-tertiary);
+        }
+
+        .text-disabled {
+            color: var(--text-disabled);
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .color-sample {
+            padding: 2rem;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .scheme-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .scheme-button {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: var(--surface);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .scheme-button:hover {
+            background: var(--surface-hover);
+            border-color: var(--border-hover);
+        }
+
+        .scheme-button.active {
+            background: var(--interactive);
+            color: var(--background);
+            border-color: var(--interactive);
+        }
+
+        .scheme-button.active:hover {
+            background: var(--interactive-hover);
+        }
+
+        /* Add visual feedback for button clicks */
+        .scheme-button:active {
+            transform: translateY(1px);
+        }
+
+        /* Add a label for clarity */
+        .theme-switcher::before {
+            content: "Theme:";
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .scheme-buttons::before {
+            content: "Scheme:";
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-container">
+        <div class="theme-switcher">
+            <select id="colorSelect">
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="gray">Gray</option>
+                <option value="burgundy">Burgundy</option>
+                <option value="peach">Peach</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="teal">Teal</option>
+                <option value="turquoise">Turquoise</option>
+                <option value="cyan">Cyan</option>
+                <option value="navy">Navy</option>
+                <option value="magenta">Magenta</option>
+                <option value="pink">Pink</option>
+            </select>
+            <div class="scheme-buttons">
+                <button class="scheme-button" data-scheme="light">Light</button>
+                <button class="scheme-button" data-scheme="dark">Dark</button>
+                <button class="scheme-button" data-scheme="high-contrast">High Contrast</button>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h1>Color Schemes Demo</h1>
+
+            <div class="card">
+                <h2>Interactive Elements</h2>
+                <div class="button-group">
+                    <button class="button button-primary">Primary Button</button>
+                    <button class="button button-secondary">Secondary Button</button>
+                    <button class="button button-accent">Accent Button</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Typography</h2>
+                <div class="text-sample">
+                    <p class="text-primary">Primary Text - Main content text</p>
+                    <p class="text-secondary">Secondary Text - Supporting information</p>
+                    <p class="text-tertiary">Tertiary Text - Additional details</p>
+                    <p class="text-disabled">Disabled Text - Inactive elements</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Theme Colors</h2>
+                <div class="color-grid">
+                    <div class="color-sample" style="background: var(--background)">Background</div>
+                    <div class="color-sample" style="background: var(--surface)">Surface</div>
+                    <div class="color-sample" style="background: var(--interactive)">Interactive</div>
+                    <div class="color-sample" style="background: var(--accent)">Accent</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Surface Variations</h2>
+                <div class="color-grid">
+                    <div class="color-sample" style="background: var(--surface)">Base</div>
+                    <div class="color-sample" style="background: var(--surface-hover)">Hover</div>
+                    <div class="color-sample" style="background: var(--surface-active)">Active</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentTheme = {
+            color: 'blue',
+            scheme: 'light'
+        };
+
+        function updateTheme() {
+            const container = document.querySelector('.theme-container');
+            container.setAttribute('data-theme', currentTheme.color);
+            container.setAttribute('data-scheme', currentTheme.scheme);
+
+            // Update UI state
+            document.getElementById('colorSelect').value = currentTheme.color;
+            document.querySelectorAll('.scheme-button').forEach(btn => {
+                const scheme = btn.getAttribute('data-scheme');
+                btn.classList.toggle('active', scheme === currentTheme.scheme);
+            });
+        }
+
+        function changeColor(color) {
+            currentTheme.color = color;
+            updateTheme();
+        }
+
+        function changeScheme(scheme) {
+            currentTheme.scheme = scheme;
+            updateTheme();
+        }
+
+        // Event Listeners
+        document.getElementById('colorSelect').addEventListener('change', (e) => {
+            changeColor(e.target.value);
+        });
+
+        document.querySelectorAll('.scheme-button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const scheme = e.target.getAttribute('data-scheme');
+                changeScheme(scheme);
+            });
+        });
+
+        // Initialize with default theme
+        updateTheme();
+    </script>
+</body>
+</html> 
