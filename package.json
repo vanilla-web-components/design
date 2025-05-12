@@ -1,6 +1,6 @@
 {
   "name": "@vanilla-web-components/design",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A design system",
   "main": "src/index.css",
   "scripts": {
@@ -16,10 +16,11 @@
   ],
   "exports": {
     ".": "./dist/index.css",
-    "./index.css": "./dist/index.css",
+    "./hue.css": "./dist/hue.css",
     "./color.css": "./dist/color.css",
-    "./color-classes.css": "./dist/color-classes.css",
-    "./opacity.css": "./dist/opacity.css"
+    "./opacity.css": "./dist/opacity.css",
+    "./index.css": "./dist/index.css",
+    "./color-classes.css": "./dist/color-classes.css"
   },
   "repository": {
     "type": "git",
