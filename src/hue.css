@@ -1,0 +1,16 @@
+:root {
+    --gray-hue: 0;
+    --burgundy-hue: 5;
+    --red-hue: 27;
+    --peach-hue: 30;
+    --orange-hue: 44;
+    --yellow-hue: 99;
+    --green-hue: 142;
+    --teal-hue: 184;
+    --turquoise-hue: 196;
+    --cyan-hue: 200;
+    --navy-hue: 230;
+    --blue-hue: 270;
+    --magenta-hue: 328;
+    --pink-hue: 330;
+}

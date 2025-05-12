@@ -1,6 +1,6 @@
 {
   "name": "@vanilla-web-components/design",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A design system",
   "main": "src/index.css",
   "scripts": {
@@ -17,7 +17,9 @@
   "exports": {
     ".": "./dist/index.css",
     "./index.css": "./dist/index.css",
-    "./color.css": "./dist/color.css"
+    "./color.css": "./dist/color.css",
+    "./color-classes.css": "./dist/color-classes.css",
+    "./opacity.css": "./dist/opacity.css"
   },
   "repository": {
     "type": "git",
@@ -36,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/vanilla-web-components/design/issues"
   },
-  "homepage": "https://github.com/vanilla-web-components/design#readme"
+  "homepage": "https://github.com/vanilla-web-components/design#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.17"
+  }
 }

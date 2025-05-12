@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lch colors</title>
+    <link rel="stylesheet" href="../dist/index.css" />
+</head>
+<style>
+    body {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .flex {
+        --gap: 5px;
+        --total-gap: calc(10*var(--gap));
+        display: flex;
+        flex-direction: row;
+        width: calc(1100px + var(--total-gap));
+        flex-wrap: wrap;
+        gap: var(--gap);
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+
+    .text {
+        font-size: 20px;
+
+        div {
+            margin: 4px;
+            padding: 4px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div style="background-color: var(--black-0); height:100px; width:100px;">--black-0</div>
+        <div style="background-color: var(--black-1); height:100px; width:100px;">--black-1</div>
+        <div style="background-color: var(--black-2); height:100px; width:100px;">--black-2</div>
+        <div style="background-color: var(--black-3); height:100px; width:100px;">--black-3</div>
+        <div style="background-color: var(--black-4); height:100px; width:100px;">--black-4</div>
+        <div style="background-color: var(--black-5); height:100px; width:100px;">--black-5</div>
+        <div style="background-color: var(--black-6); height:100px; width:100px;">--black-6</div>
+        <div style="background-color: var(--black-7); height:100px; width:100px;">--black-7</div>
+        <div style="background-color: var(--black-8); height:100px; width:100px;">--black-8</div>
+        <div style="background-color: var(--black-9); height:100px; width:100px;">--black-9</div>
+        <div style="background-color: var(--black-10); height:100px; width:100px;">--black-10</div>
+
+        <div style="background-color: var(--gray-0); height:100px; width:100px;">--gray-0</div>
+        <div style="background-color: var(--gray-1); height:100px; width:100px;">--gray-1</div>
+        <div style="background-color: var(--gray-2); height:100px; width:100px;">--gray-2</div>
+        <div style="background-color: var(--gray-3); height:100px; width:100px;">--gray-3</div>
+        <div style="background-color: var(--gray-4); height:100px; width:100px;">--gray-4</div>
+        <div style="background-color: var(--gray-5); height:100px; width:100px;">--gray-5</div>
+        <div style="background-color: var(--gray-6); height:100px; width:100px;">--gray-6</div>
+        <div style="background-color: var(--gray-7); height:100px; width:100px;">--gray-7</div>
+        <div style="background-color: var(--gray-8); height:100px; width:100px;">--gray-8</div>
+        <div style="background-color: var(--gray-9); height:100px; width:100px;">--gray-9</div>
+        <div style="background-color: var(--gray-10); height:100px; width:100px;">--gray-10</div>
+
+        <div style="background-color: var(--white-0); height:100px; width:100px;">--white-0</div>
+        <div style="background-color: var(--white-1); height:100px; width:100px;">--white-1</div>
+        <div style="background-color: var(--white-2); height:100px; width:100px;">--white-2</div>
+        <div style="background-color: var(--white-3); height:100px; width:100px;">--white-3</div>
+        <div style="background-color: var(--white-4); height:100px; width:100px;">--white-4</div>
+        <div style="background-color: var(--white-5); height:100px; width:100px;">--white-5</div>
+        <div style="background-color: var(--white-6); height:100px; width:100px;">--white-6</div>
+        <div style="background-color: var(--white-7); height:100px; width:100px;">--white-7</div>
+        <div style="background-color: var(--white-8); height:100px; width:100px;">--white-8</div>
+        <div style="background-color: var(--white-9); height:100px; width:100px;">--white-9</div>
+        <div style="background-color: var(--white-10); height:100px; width:100px;">--white-10</div>
+
+        <div style="background-color: var(--red-0); height:100px; width:100px;">--red-0</div>
+        <div style="background-color: var(--red-1); height:100px; width:100px;">--red-1</div>
+        <div style="background-color: var(--red-2); height:100px; width:100px;">--red-2</div>
+        <div style="background-color: var(--red-3); height:100px; width:100px;">--red-3</div>
+        <div style="background-color: var(--red-4); height:100px; width:100px;">--red-4</div>
+        <div style="background-color: var(--red-5); height:100px; width:100px;">--red-5</div>
+        <div style="background-color: var(--red-6); height:100px; width:100px;">--red-6</div>
+        <div style="background-color: var(--red-7); height:100px; width:100px;">--red-7</div>
+        <div style="background-color: var(--red-8); height:100px; width:100px;">--red-8</div>
+        <div style="background-color: var(--red-9); height:100px; width:100px;">--red-9</div>
+        <div style="background-color: var(--red-10); height:100px; width:100px;">--red-10</div>
+
+
+        <div style="background-color: var(--orange-0); height:100px; width:100px;">--orange-0</div>
+        <div style="background-color: var(--orange-1); height:100px; width:100px;">--orange-1</div>
+        <div style="background-color: var(--orange-2); height:100px; width:100px;">--orange-2</div>
+        <div style="background-color: var(--orange-3); height:100px; width:100px;">--orange-3</div>
+        <div style="background-color: var(--orange-4); height:100px; width:100px;">--orange-4</div>
+        <div style="background-color: var(--orange-5); height:100px; width:100px;">--orange-5</div>
+        <div style="background-color: var(--orange-6); height:100px; width:100px;">--orange-6</div>
+        <div style="background-color: var(--orange-7); height:100px; width:100px;">--orange-7</div>
+        <div style="background-color: var(--orange-8); height:100px; width:100px;">--orange-8</div>
+        <div style="background-color: var(--orange-9); height:100px; width:100px;">--orange-9</div>
+        <div style="background-color: var(--orange-10); height:100px; width:100px;">--orange-10</div>
+
+        <div style="background-color: var(--peach-0); height:100px; width:100px;">--peach-0</div>
+        <div style="background-color: var(--peach-1); height:100px; width:100px;">--peach-1</div>
+        <div style="background-color: var(--peach-2); height:100px; width:100px;">--peach-2</div>
+        <div style="background-color: var(--peach-3); height:100px; width:100px;">--peach-3</div>
+        <div style="background-color: var(--peach-4); height:100px; width:100px;">--peach-4</div>
+        <div style="background-color: var(--peach-5); height:100px; width:100px;">--peach-5</div>
+        <div style="background-color: var(--peach-6); height:100px; width:100px;">--peach-6</div>
+        <div style="background-color: var(--peach-7); height:100px; width:100px;">--peach-7</div>
+        <div style="background-color: var(--peach-8); height:100px; width:100px;">--peach-8</div>
+        <div style="background-color: var(--peach-9); height:100px; width:100px;">--peach-9</div>
+        <div style="background-color: var(--peach-10); height:100px; width:100px;">--peach-10</div>
+
+        <div style="background-color: var(--burgundy-0); height:100px; width:100px;">--burgundy-0</div>
+        <div style="background-color: var(--burgundy-1); height:100px; width:100px;">--burgundy-1</div>
+        <div style="background-color: var(--burgundy-2); height:100px; width:100px;">--burgundy-2</div>
+        <div style="background-color: var(--burgundy-3); height:100px; width:100px;">--burgundy-3</div>
+        <div style="background-color: var(--burgundy-4); height:100px; width:100px;">--burgundy-4</div>
+        <div style="background-color: var(--burgundy-5); height:100px; width:100px;">--burgundy-5</div>
+        <div style="background-color: var(--burgundy-6); height:100px; width:100px;">--burgundy-6</div>
+        <div style="background-color: var(--burgundy-7); height:100px; width:100px;">--burgundy-7</div>
+        <div style="background-color: var(--burgundy-8); height:100px; width:100px;">--burgundy-8</div>
+        <div style="background-color: var(--burgundy-9); height:100px; width:100px;">--burgundy-9</div>
+        <div style="background-color: var(--burgundy-10); height:100px; width:100px;">--burgundy-10</div>
+
+        <div style="background-color: var(--magenta-0); height:100px; width:100px;">--magenta-0</div>
+        <div style="background-color: var(--magenta-1); height:100px; width:100px;">--magenta-1</div>
+        <div style="background-color: var(--magenta-2); height:100px; width:100px;">--magenta-2</div>
+        <div style="background-color: var(--magenta-3); height:100px; width:100px;">--magenta-3</div>
+        <div style="background-color: var(--magenta-4); height:100px; width:100px;">--magenta-4</div>
+        <div style="background-color: var(--magenta-5); height:100px; width:100px;">--magenta-5</div>
+        <div style="background-color: var(--magenta-6); height:100px; width:100px;">--magenta-6</div>
+        <div style="background-color: var(--magenta-7); height:100px; width:100px;">--magenta-7</div>
+        <div style="background-color: var(--magenta-8); height:100px; width:100px;">--magenta-8</div>
+        <div style="background-color: var(--magenta-9); height:100px; width:100px;">--magenta-9</div>
+        <div style="background-color: var(--magenta-10); height:100px; width:100px;">--magenta-10</div>
+
+        <div style="background-color: var(--green-0); height:100px; width:100px;">--green-0</div>
+        <div style="background-color: var(--green-1); height:100px; width:100px;">--green-1</div>
+        <div style="background-color: var(--green-2); height:100px; width:100px;">--green-2</div>
+        <div style="background-color: var(--green-3); height:100px; width:100px;">--green-3</div>
+        <div style="background-color: var(--green-4); height:100px; width:100px;">--green-4</div>
+        <div style="background-color: var(--green-5); height:100px; width:100px;">--green-5</div>
+        <div style="background-color: var(--green-6); height:100px; width:100px;">--green-6</div>
+        <div style="background-color: var(--green-7); height:100px; width:100px;">--green-7</div>
+        <div style="background-color: var(--green-8); height:100px; width:100px;">--green-8</div>
+        <div style="background-color: var(--green-9); height:100px; width:100px;">--green-9</div>
+        <div style="background-color: var(--green-10); height:100px; width:100px;">--green-10</div>
+
+        <div style="background-color: var(--blue-0); height:100px; width:100px;">--blue-0</div>
+        <div style="background-color: var(--blue-1); height:100px; width:100px;">--blue-1</div>
+        <div style="background-color: var(--blue-2); height:100px; width:100px;">--blue-2</div>
+        <div style="background-color: var(--blue-3); height:100px; width:100px;">--blue-3</div>
+        <div style="background-color: var(--blue-4); height:100px; width:100px;">--blue-4</div>
+        <div style="background-color: var(--blue-5); height:100px; width:100px;">--blue-5</div>
+        <div style="background-color: var(--blue-6); height:100px; width:100px;">--blue-6</div>
+        <div style="background-color: var(--blue-7); height:100px; width:100px;">--blue-7</div>
+        <div style="background-color: var(--blue-8); height:100px; width:100px;">--blue-8</div>
+        <div style="background-color: var(--blue-9); height:100px; width:100px;">--blue-9</div>
+        <div style="background-color: var(--blue-10); height:100px; width:100px;">--blue-10</div>
+
+        <div style="background-color: var(--yellow-0); height:100px; width:100px;">--yellow-0</div>
+        <div style="background-color: var(--yellow-1); height:100px; width:100px;">--yellow-1</div>
+        <div style="background-color: var(--yellow-2); height:100px; width:100px;">--yellow-2</div>
+        <div style="background-color: var(--yellow-3); height:100px; width:100px;">--yellow-3</div>
+        <div style="background-color: var(--yellow-4); height:100px; width:100px;">--yellow-4</div>
+        <div style="background-color: var(--yellow-5); height:100px; width:100px;">--yellow-5</div>
+        <div style="background-color: var(--yellow-6); height:100px; width:100px;">--yellow-6</div>
+        <div style="background-color: var(--yellow-7); height:100px; width:100px;">--yellow-7</div>
+        <div style="background-color: var(--yellow-8); height:100px; width:100px;">--yellow-8</div>
+        <div style="background-color: var(--yellow-9); height:100px; width:100px;">--yellow-9</div>
+        <div style="background-color: var(--yellow-10); height:100px; width:100px;">--yellow-10</div>
+
+
+        <div style="background-color: var(--cyan-0); height:100px; width:100px;">--cyan-0</div>
+        <div style="background-color: var(--cyan-1); height:100px; width:100px;">--cyan-1</div>
+        <div style="background-color: var(--cyan-2); height:100px; width:100px;">--cyan-2</div>
+        <div style="background-color: var(--cyan-3); height:100px; width:100px;">--cyan-3</div>
+        <div style="background-color: var(--cyan-4); height:100px; width:100px;">--cyan-4</div>
+        <div style="background-color: var(--cyan-5); height:100px; width:100px;">--cyan-5</div>
+        <div style="background-color: var(--cyan-6); height:100px; width:100px;">--cyan-6</div>
+        <div style="background-color: var(--cyan-7); height:100px; width:100px;">--cyan-7</div>
+        <div style="background-color: var(--cyan-8); height:100px; width:100px;">--cyan-8</div>
+        <div style="background-color: var(--cyan-9); height:100px; width:100px;">--cyan-9</div>
+        <div style="background-color: var(--cyan-10); height:100px; width:100px;">--cyan-10</div>
+
+
+        <div style="background-color: var(--turquoise-0); height:100px; width:100px;">--turquoise-0</div>
+        <div style="background-color: var(--turquoise-1); height:100px; width:100px;">--turquoise-1</div>
+        <div style="background-color: var(--turquoise-2); height:100px; width:100px;">--turquoise-2</div>
+        <div style="background-color: var(--turquoise-3); height:100px; width:100px;">--turquoise-3</div>
+        <div style="background-color: var(--turquoise-4); height:100px; width:100px;">--turquoise-4</div>
+        <div style="background-color: var(--turquoise-5); height:100px; width:100px;">--turquoise-5</div>
+        <div style="background-color: var(--turquoise-6); height:100px; width:100px;">--turquoise-6</div>
+        <div style="background-color: var(--turquoise-7); height:100px; width:100px;">--turquoise-7</div>
+        <div style="background-color: var(--turquoise-8); height:100px; width:100px;">--turquoise-8</div>
+        <div style="background-color: var(--turquoise-9); height:100px; width:100px;">--turquoise-9</div>
+        <div style="background-color: var(--turquoise-10); height:100px; width:100px;">--turquoise-10</div>
+
+        <div style="background-color: var(--teal-0); height:100px; width:100px;">--teal-0</div>
+        <div style="background-color: var(--teal-1); height:100px; width:100px;">--teal-1</div>
+        <div style="background-color: var(--teal-2); height:100px; width:100px;">--teal-2</div>
+        <div style="background-color: var(--teal-3); height:100px; width:100px;">--teal-3</div>
+        <div style="background-color: var(--teal-4); height:100px; width:100px;">--teal-4</div>
+        <div style="background-color: var(--teal-5); height:100px; width:100px;">--teal-5</div>
+        <div style="background-color: var(--teal-6); height:100px; width:100px;">--teal-6</div>
+        <div style="background-color: var(--teal-7); height:100px; width:100px;">--teal-7</div>
+        <div style="background-color: var(--teal-8); height:100px; width:100px;">--teal-8</div>
+        <div style="background-color: var(--teal-9); height:100px; width:100px;">--teal-9</div>
+        <div style="background-color: var(--teal-10); height:100px; width:100px;">--teal-10</div>
+
+        <div style="background-color: var(--navy-0); height:100px; width:100px;">--navy-0</div>
+        <div style="background-color: var(--navy-1); height:100px; width:100px;">--navy-1</div>
+        <div style="background-color: var(--navy-2); height:100px; width:100px;">--navy-2</div>
+        <div style="background-color: var(--navy-3); height:100px; width:100px;">--navy-3</div>
+        <div style="background-color: var(--navy-4); height:100px; width:100px;">--navy-4</div>
+        <div style="background-color: var(--navy-5); height:100px; width:100px;">--navy-5</div>
+        <div style="background-color: var(--navy-6); height:100px; width:100px;">--navy-6</div>
+        <div style="background-color: var(--navy-7); height:100px; width:100px;">--navy-7</div>
+        <div style="background-color: var(--navy-8); height:100px; width:100px;">--navy-8</div>
+        <div style="background-color: var(--navy-9); height:100px; width:100px;">--navy-9</div>
+        <div style="background-color: var(--navy-10); height:100px; width:100px;">--navy-10</div>
+
+
+    </div>
+
+    <div class="text">
+        <div class="bg-black-0 text-white-10">bg: black, fg: white</div>
+        <div class="bg-blue-5 text-white-10">bg: blue, fg: white</div>
+        <div class="bg-white-2 text-black-2">bg: white, fg: black</div>
+    </div>
+
+    <div class="bg-magenta-5 text">
+        <div class="bg-transparent-0 text-white-10">bg: transparent, fg: white</div>
+        <div class="bg-transparent-5 text-white-10">bg: transparent, fg: white</div>
+        <div class="bg-transparent-9 text-white-10">bg: transparent, fg: white</div>
+    </div>
+
+</body>
+
+</html>
