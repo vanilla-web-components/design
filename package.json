@@ -1,21 +1,26 @@
 {
   "name": "@vanilla-web-components/design",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A design system",
-  "main": "src/index.css",
+  "main": "dist/index.css",
+  "style": "dist/index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "bash ./build.sh",
-    "prepublishOnly": "npm run compile"
+    "build": "postcss src/*.css --dir dist --config postcss.config.js",
+    "watch": "postcss src/*.css --dir dist --config postcss.config.js --watch",
+    "prepublishOnly": "npm run build"
   },
-  "types": "module",
   "files": [
     "dist/",
     "LICENSE",
     "README.md"
   ],
   "exports": {
-    ".": "./dist/index.css",
+    ".": {
+      "style": "./dist/index.css",
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    },
     "./hue.css": "./dist/hue.css",
     "./color.css": "./dist/color.css",
     "./opacity.css": "./dist/opacity.css",
@@ -31,16 +36,30 @@
     "design-system",
     "web-components",
     "style",
-    "css"
+    "css",
+    "react",
+    "react-components"
   ],
   "author": "Anubhav Saini <iamanubhavsaini+git@gmail.com>",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/vanilla-web-components/design/issues"
   },
   "homepage": "https://github.com/vanilla-web-components/design#readme",
   "devDependencies": {
-    "@types/node": "^22.15.17"
-  }
+    "@types/node": "^22.15.17",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.7",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^7.0.2",
+    "postcss-preset-env": "^10.1.6"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "sideEffects": false
 }

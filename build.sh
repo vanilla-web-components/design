@@ -8,7 +8,7 @@ rm -rf ${DIST}
 mkdir dist
 
 # execute src/gen-color-classes.js
-node src/gen-color-classes.js
+node src/gen-color-classes.cjs
 
 # Compile CSS files to dist directory
 cp src/*.css dist/
