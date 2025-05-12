@@ -1,0 +1,40 @@
+{
+  "name": "@vanilla-web-components/design",
+  "version": "0.0.1",
+  "description": "A design system",
+  "main": "src/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "bash ./build.sh",
+    "prepublishOnly": "npm run compile"
+  },
+  "types": "module",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./dist/index.css",
+    "./index.css": "./dist/index.css",
+    "./color.css": "./dist/color.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanilla-web-components/design.git"
+  },
+  "keywords": [
+    "design",
+    "design-system",
+    "web-components",
+    "style",
+    "css"
+  ],
+  "author": "Anubhav Saini <iamanubhavsaini+git@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vanilla-web-components/design/issues"
+  },
+  "homepage": "https://github.com/vanilla-web-components/design#readme"
+}
